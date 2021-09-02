@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+		<!---=========== CSS style ============-->
+		<link rel="stylesheet" href="style.css" />
+		<title>Responsive Grid Card Layout</title>
+	</head>
+	<body>
+		<div class="container">
+			<!---===================== Hero ======================-->
+			<div class="hero grid">
+				<h1 class="hero__title">Responsive<br />card grid generator</h1>
+			</div>
+
+			<!---===================== Grid controls flow ======================-->
+			<div class="control">
+				<div class="user__control">
+					<div class="form__group">
+						<label class="form__label" for="input-width">Card with :</label>
+						<input type="number" name="" id="input-width" class="input__control" placeholder="300" />
+					</div>
+					<div class="form__group">
+						<label class="form__label" for="input-number">Card number :</label>
+						<input type="number" name="" id="input-number" class="input__control" placeholder="4" />
+					</div>
+					<button class="button" onclick="gridSystem('input-width', 'input-number')" type="button">Generate</button>
+				</div>
+				<div class="control__reset">
+					<button class="button reset-button" onclick="(new gridSystem('input-width', 'input-number').resetGrid(20,240))" type="button">Reset Setting</button>
+				</div>
+			</div>
+
+			<!---===================== Grid Layout  ======================-->
+			<section class="grid__layout">
+				<div class="grid__layout-container">
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+					<div class="grid__card"></div>
+				</div>
+			</section>
+		</div>
+
+		<!---===================== Grid Layout  ======================-->
+		<script src="grid.js"></script>
+	</body>
+</html>
