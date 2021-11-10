@@ -86,7 +86,7 @@ img {
 }
 /*=========== LAYOUT ============*/
 .container {
-	max-width: 1280px;
+	max-width: 1210px;
 	padding: var(--space-1-5);
 	margin: 0 auto;
 }
