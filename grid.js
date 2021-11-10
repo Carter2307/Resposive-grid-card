@@ -29,7 +29,6 @@ function gridSystem(cardWidth, cardNumber) {
 	function gridHandler(container, size, num) {
 	
 		if (container) {
-			console.log(container)
 			Array.from(gridContainer.children)
 				.forEach((child) => gridContainer.removeChild(child));
 			
